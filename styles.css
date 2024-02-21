@@ -1,0 +1,43 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.image {
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.footer {
+    text-align: justify;
+    padding: 20px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
